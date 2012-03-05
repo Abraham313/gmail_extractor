@@ -1,0 +1,3 @@
+require "gmail_extractor/email_formatter/email_csv_formatter"
+require "gmail_extractor/email_formatter/email_xml_formatter"
+require "gmail_extractor/email_formatter/email_html_formatter"

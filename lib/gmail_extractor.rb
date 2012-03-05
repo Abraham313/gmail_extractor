@@ -1,13 +1,20 @@
 # encoding: utf-8
 require "gmail_extractor/version"
+
+# data structures
 require "gmail_extractor/email"
-require "gmail_extractor/email_extractor"
-require "gmail_extractor/console_printer"
-require "gmail_extractor/file_printer"
-require "gmail_extractor/email_csv_formatter"
-require "gmail_extractor/email_xml_formatter"
-require "gmail_extractor/email_html_formatter"
+
+# formatter
+require "gmail_extractor/email_formatter"
+
+# printer
+require "gmail_extractor/printer"
+
+# printer decorators
 require "gmail_extractor/email_progressbar"
+
+# gmail communication
+require "gmail_extractor/email_extractor"
 
 module GmailExtractor
 
@@ -38,7 +45,7 @@ module GmailExtractor
       opts.on("-f","--file FILE","Set output FILE. if not present, only output to STDOUT") do |file|
         options[:file] = file
       end
-      opts.on("-p","--progressbar","Show progressbar on STDOUT") do
+      opts.on("-pb","--progressbar","Show progressbar on STDOUT") do
         options[:progressbar] = true
       end
       opts.on("-h", "--help", "Show this message") do
