@@ -63,7 +63,12 @@ module GmailExtractor
     end
 
     # set correct formatter
-    output = options[:output].downcase
+    if options[:output]
+      output = options[:output].downcase
+    else
+      output = "csv"
+    end
+
     if output == "xml"
       formatter = EmailXmlFormatter.new(printer)
     elsif output == "csv"
