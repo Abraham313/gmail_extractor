@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = GmailExtractor::VERSION
   s.authors     = ["Simon Harrer"]
   s.email       = ["simon.harrer@gmail.com"]
-  s.homepage    = ""
+  s.homepage    = 'https://github.com/simonharrer/gmail_extractor'
   s.summary     = %q{Downloads emails from Google Mail to XML, CSV or HTML}
   s.description = s.summary
 
