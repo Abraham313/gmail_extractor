@@ -2,6 +2,8 @@
 
 A small command line tool to extract emails from Google Mail (GMail).
 
+[![Dependency Status](https://gemnasium.com/simonharrer/gmail_extractor.png)](https://gemnasium.com/simonharrer/gmail_extractor)
+
 ## Usage
 
     $> gem install gmail_extractor
